@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+	<head>
+		<title> </title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $("#validate-form").validate();
+
+        $("#limpiar").click(function() {
+            $("#pasaporte").hide();
+            $("#rut").hide();
+        });
+        
+        });
+    
+    
+    </script>
+
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header" class="alt skel-layers-fixed">
+				<h1><a href="home.html">Inicio <span></span></a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li>
+							<a href="" class="icon fa-angle-down">Menú</a>
+							<ul>
+								<li><a href="fuas.html">FUAS</a></li>
+								<li><a href="formulario.html">Formulario</a></li>
+								<li><a href="contacto.html">Contacto</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+<section id="banner">
+		<div class="inner">
+	    <h2>Formulario Becas</h2>
+		<form action="register.php" method="post" name="signup-form" id="validate-form">
+
+        <p class="logo">
+            <img src="images/logo.jpg" width="100px" >
+        </p>
+
+        <div class="form-element">
+            <label>Nombre completo:</label>
+            <input type="text" name="name" required/>
+        </div>
+
+	
+        <div class="form-element">
+            <label>Rut:</label>
+            <input type="number" name="rut" required/>
+        </div>
+
+		<div>
+            
+            <label>Nacionalidad:</label>
+  			<input type="radio" id="male" name="gender" value="male">
+  			<label for="male">Chilena</label><br>
+  			<input type="radio" id="female" name="gender" value="female">
+  			<label for="female">Extranjera con permenancia definitiva</label>
+  			<input type="radio" id="other" name="gender" value="other">
+  			<label for="other">Extranjera con residencia</label>
+			
+              
+        </div>
+<br>
+        <div>
+            <label>Tiene alguna discapacidad:</label>
+            <input type="radio" id="discapacidad" name="gender" value="discapacidad">
+  			<label for="discapacidad">Si</label><br>
+  			<input type="radio" id="discapacidad1" name="gender" value="discapacidad1">
+  			<label for="discapacidad1">No</label>
+        </div>
+
+<br>
+
+		<div class="form-element">
+            <label>A que pueblo originario pertenece:</label>
+            <input type="text" name="pueblo" required />
+        </div>
+
+<br>
+
+        <div>
+            <label>Cuenta de ahorro para estudios en educación superior:</label>
+            <input type="radio" id="cuentasi" name="gender" value="cuentasi">
+  			<label for="cuentasi">Si</label><br>
+  			<input type="radio" id="cuentano" name="gender" value="cuentano">
+  			<label for="cuentano">No</label>
+        </div>
+
+<br>
+		<div>
+		<label>Antecedentes académicos</label>
+		<label>Promedio de notas enseñanza media:</label>		
+        <input type="number" name="antecedentes" required />
+        </div>
+
+<br>
+
+		<div>
+		<label>Institución de educación superior donde estés estudiando:</label>		
+        <input type="text" name="educacion" required />
+        </div>
+
+<br>
+
+        <div>
+		<label>Última año de matricula de institución de educación superior</label>		
+        <input type="date" name="añomatricula" required />
+        </div>
+
+<br>		
+
+		<div>
+		<label>Integrantes de la familia:</label>		
+        <input type="text" name="integrante1" required />
+		<input type="text" name="integrante2" required />
+		<input type="text" name="integrante3" required />
+        </div>
+
+<br>		
+
+        <div class="form-element">
+            <label>Región:</label>
+            <input type="text" name="ciudad" required />
+        </div>
+		
+
+        <div class="form-element">
+            <label>Comuna:</label>
+            <input type="text" name="comuna" required />
+        </div>
+
+        <div class="form-element">
+            <label>Dirección del grupo familiar:</label>
+            <input type="text" name="direccion" required />
+        </div>
+
+        <div class="form-element">
+            <label>Número de casa/depto:</label>
+            <input type="number" name="numerocasa" required />
+        </div>
+
+<br>
+
+		<div class="form-element">
+            <label>Teléfono:</label>
+            <input type="number" name="telefono" />
+        </div>
+
+		<div class="form-element">
+            <label>Teléfono fijo:</label>
+            <input type="number" name="telefonofijo" />
+        </div>
+        
+        <div class="form-element">
+        <button type="submit" name="enviar" value="register">Enviar</button>
+        </div>
+
+        <div class="form-element" id="limpiar"> 
+        <button type="reset" >Limpiar</button>
+        </div>
+
+    </form>
+</div>
+
+</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<div class="container">
+			</section>
+			
+		<!-- Footer -->
+			<footer id="footer">
+				<span class="copyright">
+					&copy; Sitio web desarrollado por Alumnos de DUOCUC </a>
+				</span>
+			</footer>
+
+	</body>
+</html>

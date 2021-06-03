@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+	<head>
+		<title> </title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#validate-form").validate();
+
+        $("#limpiar").click(function() {
+            $("#pasaporte").hide();
+            $("#rut").hide();
+        });
+        
+        $("#rut").hide();
+        $("#pasaporte").hide();
+        
+        $("#mostrarRut").click(function() {
+            $("#pasaporte").hide();
+            $("#rut").show();
+        });
+        
+        $("#mostrarPasaporte").click(function() {
+            $("#pasaporte").show();
+            $("#rut").hide()
+        });
+
+        });
+    
+    
+    </script>
+		
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header" class="alt skel-layers-fixed">
+				<img src="images/logo.jpg" width="100px"   <span></span></a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li>
+							<a href="" class="icon fa-angle-down">Menú</a>
+							<ul>
+								<li><a href="fuas.html">FUAS</a></li>
+								<li><a href="formulario.html">Formulario</a></li>
+								<li><a href="contacto.html">Contacto</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h2>Formulario de contacto</h2>
+					<p>relleno los campos para ponerse en contacto con nosotros y obtener ayuda.</p>			
+				</div>
+			</section>
+
+
+<form action="/my-handling-form-page" method="post">
+ 
+  	<div
+    	label for="name">Nombre:</label>
+    	<input type="text" name="user_name" requerid/>
+  	</div>
+  <div
+    	<label>Email:</label>
+        <input type="email" name="email" required/>
+  </div>
+  <div class="form-element">
+        <label>Comentarios:</label>
+        <textarea name="comentario" minlength="50" required></textarea>
+  </div>
+
+  <div class="form-element">
+        <button type="submit" name="enviar" value="register">Enviar</button>
+  </div>
+
+  <div class="form-element" id="limpiar"> 
+        <button type="reset" >Limpiar</button>
+  </div>
+
+
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<div class="container">
+			</section>
+			
+		<!-- Footer -->
+			<footer id="footer">
+				<span class="copyright">
+					&copy; Sitio web desarrollado por Alumnos de DUOCUC </a>
+				</span>
+			</footer>
+
+	</body>
+</html>
